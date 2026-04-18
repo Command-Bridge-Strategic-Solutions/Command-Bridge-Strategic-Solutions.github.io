@@ -34,6 +34,11 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
 .container {
   width: min(var(--max), calc(100% - 32px));
   margin: 0 auto;
@@ -63,18 +68,12 @@ header {
   text-decoration: none;
 }
 
-.brand::before {
-  content: "CB";
+.brand-mark {
   width: 40px;
   height: 40px;
-  display: grid;
-  place-items: center;
   border: 1px solid var(--line);
   border-radius: 8px;
-  color: var(--yellow);
   background: var(--text);
-  font-size: 0.9rem;
-  font-weight: 850;
 }
 
 .brand-title {
